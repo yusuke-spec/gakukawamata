@@ -1,0 +1,111 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<title>久保田のパズル</title>
+
+<link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+<div style="position:absolute;left:200px;">
+<h1 class="ribbon">久保田のパズル</h1>
+</div>
+<div style="position:absolute;left:500px;">
+<pre>
+
+
+<h3>
+                                           完成すると久保田が出てきます</div>
+</h3></pre></div>
+
+
+<script type="text/JavaScript">
+function henko1(no){
+	if(no==1){
+		document.photo1.src="kawauso4.png";
+	}else if(no==2){
+		document.photo1.src="kawauso3.png";
+	}else if(no==3){
+		document.photo1.src="kawauso1.png";
+	}else {
+		document.photo1.src="kawauso2.png";
+	}
+}
+
+function henko2(no){
+	if(no==1){
+		document.photo2.src="kawauso2.png";
+	}else if(no==2){
+		document.photo2.src="kawauso3.png";
+	}else if(no==3){
+		document.photo1.src="kawauso1.png";
+	}else {
+		document.photo2.src="kawauso4.png";
+	}
+}
+
+function henko3(no){
+	if(no==1){
+		document.photo3.src="kawauso4.png";
+	}else if(no==2){
+		document.photo3.src="kawauso2.png";
+	}else if(no==3){
+		document.photo1.src="kawauso1.png";
+	}else {
+		document.photo3.src="kawauso3.png";
+	}
+}
+
+function henko4(no){
+	if(no==1){
+		document.photo4.src="kawauso4.png";
+	}else if(no==2){
+		document.photo4.src="kawauso2.png";
+	}else if(no==3){
+		document.photo1.src="kawauso3.png";
+	}else {
+		document.photo4.src="kawauso1.png";
+	}
+}
+
+function win_open() {
+	window.open("answer2.htm","","width=200,height=200"); 
+}
+</script>
+<form name="form1">
+<input type="button" value="1" onClick="henko1(1)"style="position: absolute; left: 750px; top: 150px"class="square_btn1">
+<input type="button" value="2" onClick="henko1(2)"style="position: absolute; left: 800px; top: 150px"class="square_btn1">
+<input type="button" value="3" onClick="henko1(3)"style="position: absolute; left: 850px; top: 150px"class="square_btn1">
+<input type="button" value="4" onClick="henko1(4)"style="position: absolute; left: 900px; top: 150px"class="square_btn1">
+</form>
+<img src="hatena1.png" name="photo1"style="position: absolute; left: 150px; top: 150px">
+
+<form name="form2">
+<input type="button" value="5" onClick="henko2(1)"style="position: absolute; left: 750px; top: 300px"class="square_btn1">
+<input type="button" value="6" onClick="henko2(2)"style="position: absolute; left: 800px; top: 300px"class="square_btn1">
+<input type="button" value="7" onClick="henko2(3)"style="position: absolute; left: 850px; top: 300px"class="square_btn1">
+<input type="button" value="8" onClick="henko2(4)"style="position: absolute; left: 900px; top: 300px"class="square_btn1">
+</form>
+<img src="hatena2.png" name="photo2"style="position: absolute; left: 150px; top: 300px">
+
+<form name="form3">
+<input type="button" value="9" onClick="henko3(1)"style="position: absolute; left: 750px; top: 450px"class="square_btn1">
+<input type="button" value="10" onClick="henko3(2)"style="position: absolute; left: 800px; top: 450px"class="square_btn1">
+<input type="button" value="11" onClick="henko3(3)"style="position: absolute; left: 850px; top: 450px"class="square_btn1">
+<input type="button" value="12" onClick="henko3(4)"style="position: absolute; left: 900px; top: 450px"class="square_btn1">
+</form>
+<img src="hatena3.png" name="photo3"style="position: absolute; left: 150px; top: 450px">
+
+<form name="form4">
+<input type="button" value="13" onClick="henko4(1)"style="position: absolute; left: 750px; top: 600px"class="square_btn1">
+<input type="button" value="14" onClick="henko4(2)"style="position: absolute; left: 800px; top: 600px"class="square_btn1">
+<input type="button" value="15" onClick="henko4(3)"style="position: absolute; left: 850px; top: 600px"class="square_btn1">
+<input type="button" value="16" onClick="henko4(4)"style="position: absolute; left: 900px; top: 600px"class="square_btn1">
+</form>
+<img src="hatena4.png" name="photo4"style="position: absolute; left: 150px; top: 600px">
+
+<form><input type="button" value="答え" onClick="win_open()"style="position: absolute; left: 1000px; top: 600px"class="square_btn2"></form> 
+</body>
+
+</html>
